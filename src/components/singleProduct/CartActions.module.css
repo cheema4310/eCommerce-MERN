@@ -1,0 +1,23 @@
+.cartActions {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addBtn {
+  font-size: 1.4rem;
+  font-family: var(--display-font);
+  font-weight: 200;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid var(--darkest-color);
+  border-radius: 0.5rem 0.5rem;
+  background-color: var(--darkest-color);
+  color: var(--light-color);
+}
+
+.addBtn:hover {
+  transform: scale(1.05);
+}

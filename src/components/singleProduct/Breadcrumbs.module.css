@@ -1,0 +1,36 @@
+.breadcrumbs {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: var(--mono-font);
+}
+
+.breadcrumbs > ul {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbsItem {
+  padding-right: 1rem;
+}
+
+.breadcrumbsItem > a {
+  /* text-decoration: none; */
+  color: var(--darkest-color);
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+.breadcrumbsItem > span {
+  padding: 0.16rem;
+  border: solid var(--darkest-color);
+  border-width: 0 0.13rem 0.13rem 0;
+  display: inline-block;
+  transform: rotate(315deg);
+  margin-bottom: 0.07rem;
+}
+
+.currentLocation {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--light-color);
+}

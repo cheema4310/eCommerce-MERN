@@ -1,0 +1,40 @@
+.returnPolicy {
+  background-color: var(--white-color);
+  font-family: var(--mono-font);
+}
+
+.returnPolicy > h2 {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: var(--display-font);
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  color: var(--darkest-color);
+  background-color: var(--light-color);
+}
+
+.content {
+  padding: 4rem 0;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content > p {
+  position: relative;
+  padding-left: 1.8rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--darkest-color);
+}
+
+.content > p:before {
+  color: var(--light-color);
+  content: "\27BE";
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}

@@ -1,0 +1,28 @@
+.itemColor {
+  margin: 1rem 0;
+}
+
+.itemColor > h5 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.itemColor > h5 > span {
+  font-family: var(--display-font);
+  font-weight: 200;
+  text-transform: capitalize;
+  color: var(--darkest-color);
+}
+.itemColor > span {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.64) 0px 3px 8px;
+}
+
+.itemColor > span:hover {
+  transform: scale(1.05);
+}

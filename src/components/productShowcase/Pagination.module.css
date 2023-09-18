@@ -1,0 +1,41 @@
+.pagination {
+  padding: 2.5rem 0 4rem 0;
+}
+
+.pagination > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination > ul > li {
+  background-color: var(--light-color);
+  font-weight: 700;
+  margin-left: 0.3rem;
+  padding: 0.51rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination > ul > li:first-child,
+.pagination > ul > li:last-child {
+  background-color: var(--white-color);
+  border-radius: 0;
+}
+
+.prev,
+.next {
+  border: solid var(--darkest-color);
+  border-width: 0 0 0.14rem 0.14rem;
+  display: inline-block;
+  padding: 0.17rem;
+  margin-bottom: 0.08rem;
+}
+
+.prev {
+  transform: rotate(45deg);
+}
+.next {
+  transform: rotate(225deg);
+}

@@ -1,0 +1,76 @@
+.categoryFilter {
+  position: relative;
+  flex: 1;
+}
+.categoryFilter > h5 {
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem 0.3rem;
+  background-color: var(--light-color);
+}
+.categoryFilter > h5:active {
+  background-color: var(--white-color);
+}
+.categoryInputs {
+  position: absolute;
+  left: 0;
+  top: 105%;
+  width: 100%;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.7rem;
+  padding: 1rem 0.5rem;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem 0.3rem;
+}
+.categoryInputs > label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.categoryInputs > label .customCheckbox {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+.categoryInputs > label .customCheckbox.checked {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.categoryInputs > label input[type="checkbox"] {
+  display: none;
+}
+
+.arrowUp,
+.arrowDown {
+  border: solid var(--darkest-color);
+  border-width: 0 0.14rem 0.14rem 0;
+  display: inline-block;
+  padding: 0.14rem;
+}
+.arrowDown {
+  transform: rotate(45deg);
+  margin-bottom: 0.13rem;
+}
+.arrowUp {
+  transform: rotate(-135deg);
+  margin: 0;
+}

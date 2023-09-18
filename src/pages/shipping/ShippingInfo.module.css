@@ -1,0 +1,47 @@
+.shippingInfo {
+  background-color: var(--white-color);
+  font-family: var(--mono-font);
+}
+.shippingInfo > h2 {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: var(--display-font);
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  color: var(--darkest-color);
+  background-color: var(--light-color);
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.content > p {
+  text-indent: 2rem;
+  line-height: 1.4;
+  padding: 0.5rem 0;
+}
+.content > h4 {
+  font-family: var(--display-font);
+  font-weight: 200;
+  font-size: 1.4rem;
+  color: var(--darkest-color);
+}
+
+.content > ul {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.content > ul li {
+  color: var(--dark-color);
+  font-family: var(--display-font);
+  font-weight: 200;
+}
+.content > ul li span {
+  color: var(--darkest-color);
+  font-size: 1.1rem;
+}

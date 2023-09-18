@@ -1,13 +1,43 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inconsolata:wght@200;400;700&display=swap");
+
+/* 
+font-family: 'Cherry Bomb One', cursive; 400
+font-family: 'Inconsolata', monospace; 200, 400, 700
+*/
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* color palette PRIMARY */
+
+:root {
+  --transparent-white-color: #f9f7f768;
+  --fff-white-color: #fff;
+  --white-color: #f9f7f7;
+  --light-color: #dbe2ef;
+  --mid-color: #e2dfe7;
+  --dark-color: #3f72af;
+  --darkest-color: #112d4e;
+
+  --transparent-darkest-color: #112d4e68;
+
+  --mono-font: "Inconsolata", monospace;
+  --display-font: "Cherry Bomb One", cursive;
 }
+
+/* color palette SECONDARY */
+
+/* :root {
+  --transparent-white-color: #f0f5f968;
+  --white-color: #f0f5f9;
+  --light-color: #c9d6df;
+  --dark-color: #52616b;
+  --darkest-color: #1e2022;
+  --transparent-darkest-color: #1e202268;
+
+  --mono-font: "Inconsolata", monospace;
+  --display-font: "Cherry Bomb One", cursive;
+} */

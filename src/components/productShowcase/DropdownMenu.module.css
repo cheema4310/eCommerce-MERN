@@ -1,0 +1,85 @@
+/* .dropdown {
+  font-family: var(--mono-font);
+  width: 25%;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  outline: none;
+
+  background-color: var(--light-color);
+
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--darkest-color);
+}
+
+.dropdown option {
+  font-size: 0.8rem;
+  background-color: var(--white-color) !important;
+} */
+.dropdown {
+  position: relative;
+  font-family: var(--mono-font);
+}
+
+.dropdown > h5 {
+  width: 11rem;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-color);
+}
+
+.dropdownInputs {
+  position: absolute;
+  left: 0;
+  top: 105%;
+  width: 100%;
+}
+
+.dropdownInputs > ul {
+  list-style: none;
+
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem 0.3rem;
+}
+
+.dropdownInputs > ul > li {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.dropdownInputs > ul > li:hover {
+  background-color: var(--light-color);
+}
+
+.arrowUp,
+.arrowDown {
+  border: solid var(--darkest-color);
+  border-width: 0 0.14rem 0.14rem 0;
+  display: inline-block;
+  padding: 0.14rem;
+}
+.arrowDown {
+  transform: rotate(45deg);
+  margin-bottom: 0.2rem;
+}
+.arrowUp {
+  transform: rotate(-135deg);
+  margin-top: 0.3rem;
+}

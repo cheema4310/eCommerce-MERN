@@ -1,0 +1,75 @@
+.product {
+  flex-basis: 20%;
+  font-family: var(--mono-font);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem 0.5rem;
+  /* flex-basis: 20%; */
+}
+
+.product a {
+  text-decoration: none;
+}
+.productImg {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+
+.productImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.productImg > .discount {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: var(--light-color);
+  font-weight: 700;
+  padding: 0.6rem 0.35rem;
+}
+.productImg > .discount:hover {
+  background-color: var(--darkest-color);
+  color: var(--white-color);
+}
+
+.productInfo {
+  /* text-align: center; */
+  padding: 1rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+.productInfo > h3 {
+  font-family: "Cherry Bomb One", cursive;
+  color: var(--darkest-color);
+  letter-spacing: 0.1rem;
+}
+.productInfo > p {
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.productInfo > h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--darkest-color);
+}
+
+.productInfo > h5 > span {
+  text-decoration: line-through;
+  font-weight: 200;
+  color: var(--dark-color);
+  margin-left: 0.5rem;
+}

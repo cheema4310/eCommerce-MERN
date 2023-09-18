@@ -1,0 +1,103 @@
+.categories {
+  padding: 2rem;
+  width: 100%;
+  max-height: 70vh;
+  background-color: var(--white-color);
+  font-family: "Inconsolata", monospace;
+}
+
+.categories > .wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 25vh 30vh;
+  /* grid-template-rows: 1fr 1.5fr; */
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+}
+.category {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s;
+  border-radius: 0.4rem 0.4rem;
+}
+.category:hover {
+  transform: scale(1.05);
+}
+.shirts {
+  grid-column: span 8;
+
+  background-image: url("../../assets/testImage/shirts.jpg");
+  background-position: 50% 24%;
+}
+
+.hoodies {
+  grid-column: span 4;
+
+  background-image: url("../../assets/testImage/hoodies.jpg");
+}
+
+.mugs {
+  grid-column: span 5;
+
+  background-image: url("../../assets/testImage/mugs.jpg");
+}
+
+.accessories {
+  grid-column: span 7;
+
+  background-image: url("../../assets/testImage/accessories.jpg");
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--transparent-darkest-color);
+  color: var(--white-color);
+}
+
+.content > h3 {
+  font-family: "Cherry Bomb One", cursive;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.content > p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.content > .explore {
+  padding: 0.3rem 0;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.content > .explore > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.3rem;
+  color: var(--darkest-color);
+  border: double 0.3rem var(--darkest-color);
+  background-color: var(--white-color);
+  border-radius: 0.4rem 0.4rem;
+  transition: all 0.4s;
+}
+.content > .explore:hover > a {
+  color: var(--white-color);
+  border: double 0.2rem var(--light-color);
+  background-color: var(--darkest-color);
+}

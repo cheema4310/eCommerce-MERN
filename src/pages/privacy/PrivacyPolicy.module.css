@@ -1,0 +1,51 @@
+.privacyPolicy {
+  background-color: var(--white-color);
+  font-family: var(--mono-font);
+}
+.privacyPolicy > h2 {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: var(--display-font);
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  color: var(--darkest-color);
+  background-color: var(--light-color);
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.content > p {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.content > p span {
+  color: var(--darkest-color);
+  /* font-size: 1.2rem; */
+  font-weight: 700;
+}
+
+.content > p:first-child,
+.content > p:nth-child(6),
+.content > p:nth-child(8) {
+  text-indent: 2rem;
+}
+
+.content > h4 {
+  font-family: var(--display-font);
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: var(--darkest-color);
+}
+
+.content > h4 span {
+  color: var(--dark-color);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}

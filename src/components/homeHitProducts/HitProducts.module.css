@@ -1,0 +1,28 @@
+.hitProducts {
+  background-color: var(--white-color);
+  font-family: "Inconsolata", monospace;
+  padding-bottom: 3rem;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper > h2 {
+  padding: 3rem 0 5rem 0;
+  text-align: center;
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: var(--darkest-color);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}

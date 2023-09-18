@@ -1,0 +1,75 @@
+.priceFilter {
+  flex: 1;
+
+  position: relative;
+}
+.priceFilter > h5 {
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem;
+  background-color: var(--light-color);
+}
+.priceFilter > h5:active {
+  background-color: var(--white-color);
+}
+.priceInput {
+  position: absolute;
+  left: 0;
+  top: 105%;
+  width: 100%;
+  z-index: 2;
+  padding: 0.5rem;
+
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.3rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 0.3rem;
+  appearance: none;
+  background: var(--light-color);
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--dark-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sliderValue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sliderValue span {
+  font-size: 0.8rem;
+  color: var(--dark-color);
+}
+
+.arrowUp,
+.arrowDown {
+  border: solid var(--darkest-color);
+  border-width: 0 0.14rem 0.14rem 0;
+  display: inline-block;
+  padding: 0.14rem;
+}
+.arrowDown {
+  transform: rotate(45deg);
+  margin-bottom: 0.13rem;
+}
+.arrowUp {
+  transform: rotate(-135deg);
+  margin: 0;
+}
